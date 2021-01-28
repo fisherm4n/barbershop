@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="16px" viewBox="0 0 8 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-down-white-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-222.000000, -105.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="icons" transform="translate(113.000000, 71.000000)">
+                <g id="white">
+                    <path d="M111.884485,44.9695833 L111.884485,35.0969583 C111.884485,34.491125 112.383918,34 113,34 C113.616082,34 114.115515,34.491125 114.115515,35.0969583 L114.115515,44.9695833 L115.884485,44.9695833 C116.180338,44.9695833 116.464073,45.0851554 116.673273,45.290875 C117.108909,45.7192639 117.108909,46.4138195 116.673273,46.8422084 L113.788789,49.6787083 C113.353153,50.1070972 112.646847,50.1070972 112.211211,49.6787083 L109.326727,46.8422084 C109.117527,46.6364888 109,46.3574731 109,46.0665417 C109,45.4607083 109.499433,44.9695833 110.115515,44.9695833 L111.884485,44.9695833 Z" id="arrow-down-white-icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
