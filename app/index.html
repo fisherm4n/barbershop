@@ -93,7 +93,7 @@
           <a href="#" class="header__bottom-inst">
             <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink">
-              <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+              Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch
               <title>instagram-small-white-icon</title>
               <desc>Created with Sketch.</desc>
               <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -146,7 +146,7 @@
           </div>
         </div>
         <div class="hello__img-box">
-          <img src="images/hello/main.jpg" alt="Barber" class="hello__img">
+          <img src="images/hello/slider1.jpg" alt="Barber" class="hello__img">
         </div>
         <div class="hello__item">
           <div class="hello__item-top">
@@ -159,7 +159,39 @@
               С каждой стрижки или покупки получаете баллы, которые можно тратить на любые услуги или косметику.
             </p>
           </div>
-          <a class="hello__item-btn" href="#cashback">ПОДРОБНЕЕ О КЭШБЭКЕ</a>
+          <button class="hello__item-btn" type="submit" data-fancybox data-src="#modal">ПОДРОБНЕЕ О КЭШБЭКЕ</button>
+          <div class="popup" id="modal" style="display: none;">
+            <div class="popup__inner">
+              <div class="popup__header">
+                <img src="images/hello/persent.svg" alt="percent">
+              </div>
+              <div class="popup__block">
+                <h3 class="popup__title">Как работает кэшбэк?</h3>
+                <p class="popup__text">Сashback начисляется за все товары и услуги, потратить его можно
+                  также на любые товары и услуг</p>
+              </div>
+              <div class="popup__block">
+                <h3 class="popup__title">Как получить 10%?</h3>
+                <p class="popup__text"><span>5% Кэшбэк получают</span> все начиная с первой стрижки <br>
+                  <span>10% Кэшбэк</span> получают клиенты, которые стриглись 4 или более раза за последние
+                  4 месяца.</p>
+              </div>
+              <div class="popup__block">
+                <h3 class="popup__title">Где можно потратить?</h3>
+                <p class="popup__text">Копить и тратить баллы можно как на Ордынке, так
+                  и на Красной стреле.</p>
+              </div>
+              <div class="popup__block">
+                <h3 class="popup__title">Как узнать сколько у меня баллов?</h3>
+                <p class="popup__text">Узнать баланс можно у администратора любым удобным способом через
+                  месенджеры, по телефону или во время визита.</p>
+              </div>
+              <div class="popup__block">
+                <h3 class="popup__title">Как долго хранятся баллы?</h3>
+                <p class="popup__text">Накопленные баллы не сгорают.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -167,18 +199,20 @@
   </section>
   <div class="models">
     <div class="container">
-      <div class="models__inner">
-        <div class="model">
-          <img src="images/hello/models/1.png" alt="" class="model__img">
-        </div>
-        <div class="model">
-          <img src="images/hello/models/2.png" alt="" class="model__img">
-        </div>
-        <div class="model">
-          <img src="images/hello/models/1.png" alt="" class="model__img">
-        </div>
-        <div class="model">
-          <img src="images/hello/models/2.png" alt="" class="model__img">
+      <div class="swiper-container">
+        <div class="swiper-wrapper models__inner">
+          <div class="model">
+            <img src="images/hello/models/1.png" alt="" class="model__img">
+          </div>
+          <div class="model">
+            <img src="images/hello/models/2.png" alt="" class="model__img">
+          </div>
+          <div class="model">
+            <img src="images/hello/models/1.png" alt="" class="model__img">
+          </div>
+          <div class="model">
+            <img src="images/hello/models/2.png" alt="" class="model__img">
+          </div>
         </div>
       </div>
     </div>
@@ -187,22 +221,619 @@
     <div class="container">
       <div class="more__inner">
         <div class="more__img-box">
-          <img src="images/hello/big.png" alt="" class="more__img">
-          <a href="#" class="more__link">БОЛЬШЕ ФОТОГРАФИЙ </a>
+          <img src="images/hello/slider2.jpg" alt="" class="more__img">
+          <a data-fancybox="gallery" href="images/hello/slider2.jpg" class="more__link">
+
+            БОЛЬШЕ ФОТОГРАФИЙ <img src="images/hello/arrow-white.svg" alt="arrow" class="more__link-img"></a>
+          <div class="gallery" style="display: none;">
+            <a data-fancybox="gallery" href="images/hello/slider1.jpg"></a>
+            <a data-fancybox="gallery" href="images/hello/slider3.jpg"></a>
+          </div>
+
         </div>
         <div class="more__content">
-          <a class="more__signup">ЗАПИСАТЬСЯ НА СТРИЖКУ</a>
+          <a href="#" class="more__signup">ЗАПИСАТЬСЯ НА СТРИЖКУ</a>
           <div class="more__content-inner">
-              <img src="images/hello/crem.png" alt="" class="more__content-img">
+            <img src="images/hello/cream.png" alt="" class="more__content-img">
             <p class="more__content-text">
               Попробуй комплекс по уходу за кожей лица от London Grooming
             </p>
-            <a href="#" class="more__content-link">посмотреть ролик</a>
+            <a data-fancybox href="https://www.youtube.com/watch?v=hxP_2sqyIBc" class="more__content-link">
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="width: 20px; height: 20px; position: absolute;
+                 top: 0px; left: 0px" xml:space="preserve">
+                <path d="M30,0C13.458,0,0,13.458,0,30s13.458,30,30,30s30-13.458,30-30S46.542,0,30,0z M45.563,30.826l-22,15
+	C23.394,45.941,23.197,46,23,46c-0.16,0-0.321-0.038-0.467-0.116C22.205,45.711,22,45.371,22,45V15c0-0.371,0.205-0.711,0.533-0.884
+	c0.328-0.174,0.724-0.15,1.031,0.058l22,15C45.836,29.36,46,29.669,46,30S45.836,30.64,45.563,30.826z" />
+              </svg>
+
+              посмотреть ролик</a>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <section class="price">
+    <div class="container">
+      <div class="price__inner">
+        <h2 class="price__title">
+          Цены и услуги
+        </h2>
+        <div class="price__box">
+          <div class="price__column">
+            <div class="price__card">
+              <div class="price__title-box">
+                <h3 class="price__card-title">
+                  Стрижка
+                </h3>
+                <span class="price__card-payinfo">
+                  Принимаем карты
+                </span>
+              </div>
+              <div class="price__list">
+                <a href="#tab-1" class="price__item price__item--first price__item--active">
+                  <h4 class="price__item-title">
+                    Первая стрижка
+                  </h4>
+                  <span class="price__item-values">
+                    <span class="price__item-time">
+                      50 мин /
+                    </span>
+                    <span class="price__item-value">
+                      1 700 ₽
+                    </span>
+                  </span>
+                </a>
+                <a href="#tab-2" class="price__item">
+                  <h4 data-id="#tab2" class="price__item-title">
+                    Мужская стрижка
+                  </h4>
+                  <span class="price__item-values">
+                    <span class="price__item-time">
+                      50 мин /
+                    </span>
+                    <span class="price__item-value">
+                      2 000 ₽
+                    </span>
+                  </span>
+                </a>
+                <a href="#tab-3" class="price__item">
+                  <h4 class="price__item-title">
+                    Стрижка машинкой
+                  </h4>
+                  <span class="price__item-values">
+                    <span class="price__item-time">
+                      30 мин /
+                    </span>
+                    <span class="price__item-value">
+                      1 000 ₽
+                    </span>
+                  </span>
+                </a>
+                <a href="#tab-4" class="price__item">
+                  <h4 class="price__item-title">
+                    Детская стрижка
+                  </h4>
+                  <span class="price__item-values">
+                    <span class="price__item-time">
+                      5-12 /
+                    </span>
+                    <span class="price__item-time">
+                      45 мин /
+                    </span>
+                    <span class="price__item-value">
+                      1 400 ₽
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="price__card">
+              <h3 class="price__card-title">
+                Другое
+              </h3>
+              <div class="price__list">
+                <a href="#tab-5" class="price__item ">
+                  <h4 class="price__item-title">
+                    Тонирование / камуфляж
+                  </h4>
+                  <span class="price__item-values">
+                    <span class="price__item-time">
+                      30 мин /
+                    </span>
+                    <span class="price__item-value">
+                      1 000 ₽
+                    </span>
+                  </span>
+                </a>
+                <a href="#tab-6" class="price__item ">
+                  <h4 class="price__item-title">
+                    Комплекс по уходу за кожей лица от London Grooming
+                  </h4>
+                  <span class="price__item-values">
+                    <span class="price__item-time">
+                      20 мин /
+                    </span>
+                    <span class="price__item-value">
+                      1 000 ₽
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="price__card">
+              <h3 class="price__card-title">
+                Борода
+              </h3>
+              <div class="price__list">
+                <a href="#tab-7" class="price__item ">
+                  <h4 class="price__item-title">
+                    Оформление бороды и усов
+                  </h4>
+                  <span class="price__item-values">
+                    <span class="price__item-time">
+                      45 мин /
+                    </span>
+                    <span class="price__item-value">
+                      1 200 ₽
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="price__column price__column--center">
+            <div class="price__card">
+              <h3 class="price__card-title">
+                Комбо <span class="price__card-sale">(-10%)</span>
+              </h3>
+              <div class="price__list">
+                <div class="price__item-combo">
+                  <h4 class="price__item-title">
+                    Папа + сын
+                  </h4>
+                  <span class="price__item-values">
+                    <span class="price__item-time">
+                      50 мин / <span class="price__item-old">3 300 ₽</span>
+                    </span>
+                    <span class="price__item-value">
+                      3 100 ₽
+                    </span>
+                  </span>
+                </div>
+                <div class="price__item-combo">
+                  <h4 class="price__item-title">
+                    Стрижка + борода
+                  </h4>
+                  <span class="price__item-values">
+                    <span class="price__item-time">
+                      90 мин / <span class="price__item-old">3 000 ₽</span>
+                    </span>
+                    <span class="price__item-value">
+                      2 900 ₽
+                    </span>
+                  </span>
+                </div>
+                <div class="price__item-combo">
+                  <h4 class="price__item-title">
+                    Стрижка + бритье
+                  </h4>
+                  <span class="price__item-values">
+                    <span class="price__item-time">
+                      110 мин / <span class="price__item-old">3 000 ₽</span>
+                    </span>
+                    <span class="price__item-value">
+                      2 900 ₽
+                    </span>
+                  </span>
+                </div>
+                <div class="price__item-combo">
+                  <h4 class="price__item-title">
+                    Стрижка + уход
+                  </h4>
+                  <span class="price__item-values">
+                    <span class="price__item-time">
+                      60 мин / <span class="price__item-old">3 000 ₽</span>
+                    </span>
+                    <span class="price__item-value">
+                      2 900 ₽
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="price__card">
+              <h3 class="price__card-title">
+                Бритье
+              </h3>
+              <div class="price__list">
+                <a href="#tab-8" class="price__item ">
+                  <h4 class="price__item-title">
+                    Бритье опасной бритвой
+                  </h4>
+                  <span class="price__item-values">
+                    <span class="price__item-time">
+                      40 мин /
+                    </span>
+                    <span class="price__item-value">
+                      1 800 ₽
+                    </span>
+                  </span>
+                </a>
+                <a href="#tab-9" class="price__item ">
+                  <h4 class="price__item-title">
+                    Бритье головы
+                  </h4>
+                  <span class="price__item-values">
+                    <span class="price__item-time">
+                      50 мин /
+                    </span>
+                    <span class="price__item-value">
+                      1 000 ₽
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="price__card">
+              <h3 class="price__card-title">
+                Окрашивание
+              </h3>
+              <div class="price__list">
+                <a href="#tab-10" class="price__item ">
+                  <h4 class="price__item-title">
+                    Осветление и окрашивание
+                    в один тон (короткие волосы)
+                  </h4>
+                  <span class="price__item-values">
+                    <span class="price__item-time">
+                      3 часа /
+                    </span>
+                    <span class="price__item-value">
+                      6 900 ₽
+                    </span>
+                  </span>
+                </a>
+                <a href="#tab-11" class="price__item ">
+                  <h4 class="price__item-title">
+                    Сложные виды окрашивания
+                  </h4>
+                  <span class="price__item-values">
+                    <span class="price__item-time">
+                      4 часа /
+                    </span>
+                    <span class="price__item-value">
+                      8 900 ₽
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="price__content">
+            <div id="tab-1" class="price__content-item price__content-item--active">
+              <img src="images/price/first-cut.jpg" alt="Стрижка" class="price__content-img">
+              <div class="price__content-inner">
+                <h3 class="price__content-title">
+                  Первая стрижка
+                </h3>
+                <p class="price__content-text">
+                  Мастера Fjord работают со стрижками любого уровня сложности и стиля. Ребята внимательно выслушают
+                  предпочтения или помогут подобрать ту стрижку, которая подойдет вашему типу лица, структуре волос и
+                  стилю жизни. Помимо самой стрижки в услугу входит мытье головы, а так же укладка профессиональными
+                  средствами из США, Нидерландов и Великобритании.
+                </p>
+              </div>
+            </div>
+            <div id="tab-2" class="price__content-item">
+              <img src="images/price/first-cut.jpg" alt="Стрижка" class="price__content-img">
+              <div class="price__content-inner">
+                <h3 class="price__content-title">
+                  Мужская стрижка
+                </h3>
+                <p class="price__content-text">
+                  Мастера Fjord работают со стрижками любого уровня сложности и стиля. Ребята внимательно выслушают
+                  предпочтения или помогут подобрать ту стрижку, которая подойдет вашему типу лица, структуре волос и
+                  стилю жизни. Помимо самой стрижки в услугу входит мытье головы, а так же укладка профессиональными
+                  средствами из США, Нидерландов и Великобритании.
+                </p>
+              </div>
+            </div>
+            <div id="tab-3" class="price__content-item">
+              <img src="images/price/razor.jpg" alt="Стрижка" class="price__content-img">
+              <div class="price__content-inner">
+                <h3 class="price__content-title">
+                  Стрижка машинкой
+                </h3>
+                <p class="price__content-text">
+                  Стрижка машинкой одной или двумя насадками. В стоимость услуги входит мытье головы, стрижка, а так же
+                  укладка с помощью профессиональных средств, подобранных для Ваших волос.
+                </p>
+              </div>
+            </div>
+            <div id="tab-4" class="price__content-item">
+              <img src="images/price/kid.jpg" alt="Стрижка" class="price__content-img">
+              <div class="price__content-inner">
+                <h3 class="price__content-title">
+                  Детская стрижка
+                </h3>
+                <p class="price__content-text">
+                  Стрижка для наших маленьких клиентов в возрасте от 5 до 12 лет. Мастера выслушают Ваши пожелания или
+                  помогут подобрать стрижку подходящую типу лица и структуре волос. В стоимость стрижки входит мытье
+                  головы и укладка профессиональными средствами.
+                </p>
+              </div>
+            </div>
+            <div id="tab-5" class="price__content-item">
+              <img src="images/price/grey.jpg" alt="Стрижка" class="price__content-img">
+              <div class="price__content-inner">
+                <h3 class="price__content-title">
+                  Тонирование / камуфляж
+                </h3>
+                <p class="price__content-text">
+                  Специальная услуга для того, чтобы скрыть седину или подчеркнуть форму бороды.
+                </p>
+              </div>
+            </div>
+            <div id="tab-6" class="price__content-item">
+              <img src="images/price/cream.jpg" alt="Стрижка" class="price__content-img">
+              <div class="price__content-inner">
+                <h3 class="price__content-title">
+                  Детская стрижка
+                </h3>
+                <p class="price__content-text">
+                  Стрижка для наших маленьких клиентов в возрасте от 5 до 12 лет. Мастера выслушают Ваши пожелания или
+                  помогут подобрать стрижку подходящую типу лица и структуре волос. В стоимость стрижки входит мытье
+                  головы и укладка профессиональными средствами.
+                </p>
+              </div>
+            </div>
+            <div id="tab-7" class="price__content-item">
+              <img src="images/price/musta.jpg" alt="Стрижка" class="price__content-img">
+              <div class="price__content-inner">
+                <h3 class="price__content-title">
+                  Оформление бороды и усов
+                </h3>
+                <p class="price__content-text">
+                  При оформлении бороды и усов наши мастера, выслушают Ваши пожелания или предложат сделать форму
+                  бороды, подходящую именно Вам. В стоимость так же входит использование средств для ухода за бородой.
+                </p>
+              </div>
+            </div>
+            <div id="tab-8" class="price__content-item">
+              <img src="images/price/dang.jpg" alt="Стрижка" class="price__content-img">
+              <div class="price__content-inner">
+                <h3 class="price__content-title">
+                  Бритье опасной бритвой
+                </h3>
+                <p class="price__content-text">
+                  Процедура выполняется с помощью опасной бритвы. В стоимость входит нанесение средств, включающие
+                  эфирные масла, распаривание перед бритьем и увлажнение кожи после бритья с использованием специальных
+                  профессиональных средств из Италии.
+                </p>
+              </div>
+            </div>
+            <div id="tab-9" class="price__content-item">
+              <img src="images/price/dang.jpg" alt="Стрижка" class="price__content-img">
+              <div class="price__content-inner">
+                <h3 class="price__content-title">
+                  Бритье головы
+                </h3>
+                <p class="price__content-text">
+                  Процедура выполняется с помощью опасной бритвы. В стоимость входит нанесение средств, включающие
+                  эфирные масла, распаривание перед бритьем и увлажнение кожи после бритья с использованием специальных
+                  профессиональных средств из Италии.
+                </p>
+              </div>
+            </div>
+            <div id="tab-10" class="price__content-item">
+              <img src="images/price/mono.jpg" alt="Стрижка" class="price__content-img">
+              <div class="price__content-inner">
+                <h3 class="price__content-title">
+                  Осветление и окрашивание в один тон
+                </h3>
+                <p class="price__content-text">
+                  Услуга подразумевает осветление и потом нанесение красителя выбранного цвета.
+                </p>
+              </div>
+            </div>
+            <div id="tab-11" class="price__content-item">
+              <img src="images/price/hard.jpg" alt="Стрижка" class="price__content-img">
+              <div class="price__content-inner">
+                <h3 class="price__content-title">
+                  Сложные виды окрашивания
+                </h3>
+                <p class="price__content-text">
+                  Осветление, имитирующее выгорание волос. Многоцветное окрашивание и другие сочетания разных техник
+                  окрашиваний. Конечная стоимость будет известна после консультации с мастером.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="team-bg">
+
+  </div>
+  <section class="team">
+    <div class="container">
+      <div class="team__inner">
+        <h2 class="team__title">
+          Команда
+        </h2>
+        <p class="team__text">
+          Мы собрали команду из разносторонних, интересных людей, работающих в разных стилях, но объединенных общей
+          целью. Работы наших мастеров публикуют мировые косметические бренды (Mr Natty, Reuzel, Dapper Dan) как образцы
+          стиля и уровня мастерства.
+        </p>
+        <div class="team__cards">
+          <div class="team__column">
+            <div class="team__card">
+              <img src="images/team/1.png" alt="" class="team__img-dev">
+              <div class="team__card-content">
+                <p class="team__card-title">
+                  Иван Якубов
+                </p>
+                <p class="team__card-text">
+                  Мы искренне любим свое дело и хотим дарить крутые стрижки и эмоции. У нас не стоит задачи превратиться
+                  в
+                  еще один конвейер по продаже франшиз.
+
+                  Мне всегда важно поддерживать связь с нашими клиентами, поэтому если у вас возникли вопросы или
+                  замечания к работе команды, смело обращайтесь с ними ко мне!
+                </p>
+              </div>
+            </div>
+            <div class="team__card">
+              <img src="images/team/2.png" alt="" class="team__img">
+              <div class="team__card-content">
+                <p class="team__card-title">
+                  Даниил
+                </p>
+                <p class="team__card-text">
+                  Король удлиненных стрижек. Проводит мастерклассы по креативным стрижкам и обожает бритье опасной
+                  бритвой.
+                </p>
+                <a href="#" class="team__card-link">
+                  ПОСМОТРЕТЬ РОЛИК
+                </a>
+              </div>
+            </div>
+            <div class="team__card">
+              <img src="images/team/3.png" alt="" class="team__img">
+              <div class="team__card-content">
+                <p class="team__card-title">
+                  Евгений
+                </p>
+                <p class="team__card-text">
+                  Мастер классических стрижек, но он так же с легкостью поможет подобрать Вам креативный образ.
+                </p>
+                <a href="#" class="team__card-link">
+                  ПОСМОТРЕТЬ РОЛИК
+                </a>
+              </div>
+            </div>
+            <div class="team__card">
+              <img src="images/team/4.png" alt="" class="team__img">
+              <div class="team__card-content">
+                <p class="team__card-title">
+                  Виктор
+                </p>
+                <p class="team__card-text">
+                  Хотите чистый фейд, либо креативную удлинненую стрижку? Тогда вам к Виктору! Мастер работает с любой
+                  длиной и любым типом волос.
+                </p>
+                <a href="#" class="team__card-link">
+                  ПОСМОТРЕТЬ РОЛИК
+                </a>
+              </div>
+            </div>
+            <div class="team__more">
+              Больше фотографий и видео с барберами смотрите <a href="https://www.instagram.com" target="_blank"
+                class="tem__more-link">
+                в нашем instagram
+              </a>
+            </div>
+          </div>
+          <div class="team__column">
+            <div class="team__card">
+              <img src="images/team/5.png" alt="" class="team__img">
+              <div class="team__card-content">
+                <p class="team__card-title">
+                  Кирилл
+                </p>
+                <p class="team__card-text">
+                  Амбассадор укладочных средств mr Natty. Быстро и качественно сделает стрижку любой сложности.
+                </p>
+                <a href="#" class="team__card-link">
+                  ПОСМОТРЕТЬ РОЛИК
+                </a>
+              </div>
+            </div>
+            <div class="team__card">
+              <img src="images/team/6.png" alt="" class="team__img">
+              <div class="team__card-content">
+                <p class="team__card-title">
+                  Виталик
+                </p>
+                <p class="team__card-text">
+                  Чуткий мастер с отличной техникой стрижек, стремится сделать каждый образ индивидуальным. Работает с
+                  любой длиной и сложностью волос.
+                </p>
+                <a href="#" class="team__card-link">
+                  ПОСМОТРЕТЬ РОЛИК
+                </a>
+              </div>
+            </div>
+            <div class="team__card">
+              <img src="images/team/7.png" alt="" class="team__img">
+              <div class="team__card-content">
+                <p class="team__card-title">
+                  Сергей
+                </p>
+                <p class="team__card-text">
+                  Внимательный и аккуратный мастер. Ответственно подходит к работе, безупречно делает стрижки любой
+                  сложности.
+                </p>
+                <a href="#" class="team__card-link">
+                  ПОСМОТРЕТЬ РОЛИК
+                </a>
+              </div>
+            </div>
+            <div class="team__card">
+              <img src="images/team/8.png" alt="" class="team__img">
+              <div class="team__card-content">
+                <p class="team__card-title">
+                  Никита
+                </p>
+                <p class="team__card-text">
+                  Приверженец английской школы стрижек. Работает с любой длиной. Обязательно запишитесь к нему на
+                  бороду.
+                </p>
+                <a href="#" class="team__card-link">
+                  ПОСМОТРЕТЬ РОЛИК
+                </a>
+              </div>
+            </div>
+            <div class="team__card">
+              <img src="images/team/9.png" alt="" class="team__img">
+              <div class="team__card-content">
+                <p class="team__card-title">
+                  Никита
+                </p>
+                <p class="team__card-text">
+                  Обожает классику, но с легкостью справляется с любыми другими стрижками. Так же Никита прекрасно
+                  владеет
+                  английским языком.
+                </p>
+                <a href="#" class="team__card-link">
+                  ПОСМОТРЕТЬ РОЛИК
+                </a>
+              </div>
+            </div>
+            <div class="team__card">
+              <img src="images/team/10.png" alt="" class="team__img">
+              <div class="team__card-content">
+                <p class="team__card-title">
+                  Денис
+                </p>
+                <p class="team__card-text">
+                  Мастер, который заинтересован в том, чтобы сделать вам идеальную стрижку. Работает с любой сложностью
+                  волос, а так же за креативный подход к работе
+                </p>
+                <a href="#" class="team__card-link">
+                  ПОСМОТРЕТЬ РОЛИК
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <script src="js/main.min.js"></script>
 </body>
 

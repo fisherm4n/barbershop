@@ -20,7 +20,10 @@
     "jquery": "^3.5.1"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "jquery.maskedinput": "^1.4.1",
-    "mozjpeg": "^7.0.0"
+    "mozjpeg": "^7.0.0",
+    "slider": "^1.0.4",
+    "swiper": "^6.4.10"
   }
 }

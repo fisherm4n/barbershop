@@ -12,16 +12,23 @@ body {
   height: 102%;
   background-color: #357fd6;
   color: #fff;
-  -webkit-transition: all .3s;
   transition: all .3s;
   border-radius: 0 4px 4px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
 }
 .container{
   margin: 0 auto;
   max-width: 1140px;
   width: 100%;
   padding: 0 15px;
+}
+.swiper-container {
+ 
+  .swiper-button-prev,
+  .swiper-button-next{
+    display: none;
+  }
 }

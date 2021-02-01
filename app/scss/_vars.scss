@@ -6,3 +6,32 @@
   font-family: 'SourceSansPro-Regular';
   font-weight: 700;
 }
+%more-btn{
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #000;
+  background-color: #000;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  @extend %Gilroy-700;
+}
+%price__item{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  border-bottom: 1px dashed #979797;
+  padding-top: 9px;
+  padding-bottom: 5px;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+}
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}x(#{$numbers});
+}

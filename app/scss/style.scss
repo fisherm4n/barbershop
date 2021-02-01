@@ -303,6 +303,7 @@
 
       &--sale::before {
         background-image: url('../images/hello/gloves.svg');
+        top: 24px;
       }
 
       &--cashback::before {
@@ -315,13 +316,8 @@
     }
 
     &-btn {
-      width: 100%;
-      color: #fff;
-      padding: 15px;
-      border: 1px solid #000;
-      background-color: #000;
-      text-align: center;
-      border-radius: 4px;
+      cursor: pointer;
+      @extend %more-btn;
     }
 
 
@@ -369,6 +365,8 @@
 }
 
 .models {
+  margin-bottom: 16px;
+
   &__inner {
     display: flex;
 
@@ -377,6 +375,7 @@
   .model {
 
     &__img {
+      object-fit: cover;
       height: 371px;
       width: 273px;
     }
@@ -386,42 +385,389 @@
     margin-left: 15px;
   }
 }
-.more{
-  &__inner{
+
+.more {
+  margin-bottom: 60px;
+
+  &__inner {
     display: flex;
+    max-width: 100%;
+    width: 100%;
   }
-  &__img-box{
-    height: 368px;
+
+  &__content {
+    width: 273px;
+    height: 100%;
+
+    &-img {
+      height: 64px;
+    }
+
+    &-inner {
+      border-radius: 8px;
+      background-color: #fff5ed;
+      padding: 24px;
+      padding-bottom: 10px;
+    }
+
+    &-text {
+      color: #000;
+      font-size: 26px;
+      @extend %Gilroy-700;
+      margin-bottom: 23px;
+      line-height: 1.2;
+    }
+
+    &-link {
+      position: relative;
+      padding-left: 30px;
+      text-transform: uppercase;
+      @extend %Gilroy-700;
+      color: #000;
+      transition: all 0.3s;
+
+      &:hover {
+        color: #357fd6;
+
+        svg {
+          path {
+            fill: #357fd6;
+          }
+        }
+      }
+    }
   }
-  &__content{
-        width: 273px;
-        height: 100%;
-        &-img{
-          height: 64px;
-        }
-        &-inner{
-          border-radius: 8px;
-          background-color: #fff5ed;
-         padding: 24px;
-        }
-        &-text{
-          color: #000;
-          font-size: 26px;
-        }
-  }
-  &__signup{
+
+  &__signup {
     display: block;
-        margin-bottom: 16px;
-        border-radius: 8px;
-        background-color: #357fd6;
-        width: 100%;
-        color: #fff;
-        font-family: gilroy,
-        sans-serif;
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 1px;
-        padding: 20px 0px;
-      text-align: center;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    background-color: #357fd6;
+    width: 100%;
+    color: #fff;
+    font-family: gilroy,
+      sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 20px 0px;
+    text-align: center;
+  }
+
+  &__img-box {
+    margin-right: 16px;
+  }
+
+  &__img {
+    object-fit: cover;
+    width: 851px;
+    border-radius: 10px;
+    height: 382px;
+  }
+
+  &__link {
+    position: relative;
+    margin-top: -50px;
+    @extend %more-btn;
+    display: block;
+    width: 230px;
+    margin-left: 30px;
+    padding-right: 30px;
+
+    &-img {
+      position: absolute;
+      display: block;
+      transform: translateY(-50%);
+      top: 50%;
+      right: 30px;
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      .more__link-img {
+        right: 20px;
+      }
+    }
+  }
+}
+
+.popup {
+  border-radius: 8px;
+  background-color: #fff;
+  width: 391px;
+  padding: 24px;
+  position: relative;
+
+  &__header {
+    margin-bottom: 12px;
+  }
+
+  &__block {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    color: #000;
+    @extend %Gilroy-700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 4px;
+  }
+
+  &__text {
+    color: #454545;
+    @extend %SSP-400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.price {
+  margin-bottom: 60px;
+
+  .container {
+    padding: 0px;
+  }
+
+  &__title {
+    padding-bottom: 14px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #000;
+    @extend %Gilroy-700;
+    font-size: 50px;
+    margin-left: 15px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card {
+    margin-top: 25px;
+  }
+
+  &__column,
+  &__content {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    padding: 0px 15px;
+  }
+
+  // &__column--center{
+  //   padding: 0px 17px;
+  // }
+  &__title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__card-title {
+    color: #000;
+    @extend %Gilroy-700;
+    font-size: 22px;
+  }
+
+  &__card-payinfo {
+    padding-right: 28px;
+    background-image: url('../images/price/card-icon.svg');
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: center;
+  }
+
+  &__item {
+    @extend %price__item;
+
+    &:hover {
+      .price__item-title {
+        background-color: #000;
+        color: #fff
+      }
+    }
+  }
+
+  &__item--first {
+    background-color: #fff5ed;
+    border-left: 4px solid #393939;
+    padding-left: 10px;
+    padding-bottom: 9px;
+    padding-right: 5px;
+  }
+
+  &__item-title {
+    transition: all 0.3s;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 4px;
+    max-width: 217px;
+  }
+
+  &__item-time {
+    padding-right: 3px;
+    color: #979797;
+    font-size: 14px;
+  }
+
+  &__item-value {
+    @extend %Gilroy-700;
+    color: #161616;
+    font-size: 18px;
+  }
+
+  &__item--active {
+    .price__item-title {
+      background-color: #000;
+      color: #fff
+    }
+  }
+
+  &__content-item {
+    display: none;
+
+    &.price__content-item--active {
+      display: block;
+    }
+  }
+
+  &__item-combo {
+    @extend %price__item;
+    cursor: auto;
+  }
+
+  &__card-sale,
+  &__item-old {
+    color: #c7a081;
+    @extend %Gilroy-700;
+  }
+
+  &__item-old {
+    text-decoration: line-through;
+  }
+
+  &__content-item {
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, .08);
+  }
+
+  &__content-inner {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  &__content-img {
+    object-fit: cover;
+    width: 550px;
+    height: 320px;
+  }
+
+  &__content-title {
+    color: #000;
+    font-size: 26px;
+    @extend %Gilroy-700;
+    margin-bottom: 2px;
+    line-height: 1.2;
+  }
+
+  &__content-text {
+    font-size: 14px;
+  }
+}
+
+.team-bg {
+  background-image: url('../images/team/bg.jpg');
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.team {
+  background-color: #080b10;
+  color: #fff5ed;
+  ;
+
+  &__title,
+  &__text {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 50px;
+    @extend %Gilroy-700;
+  }
+
+  &__text {
+    max-width: 783px;
+    font-size: 20px;
+    margin: 0 auto 25px;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card {
+    display: flex;
+    background-color: #222;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .04);
+
+    &+& {
+      margin-top: 32px;
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+    width: 179px;
+    height: 191px;
+  }
+  &__img-dev {
+    object-fit: cover;
+    width: 263px;
+    height: 487px;
+  }
+
+  &__card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  &__card-title {
+    font-size: 26px;
+    @extend %Gilroy-700;
+  }
+
+  &__card-text {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  &__card-link {
+    color: #c7a081;
+    font-size: 10px;
+    padding-left: 18px;
+    background-image: url('../images/team/play-icon.svg');
+    background-position-x: 0%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-self: flex-end;
+  }
+
+  &__column {
+    flex-basis: 50%;
+
+    &+& {
+      margin-left: 30px;
+    }
   }
 }
