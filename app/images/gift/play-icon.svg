@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>play-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-407.000000, -108.000000)" fill="#ffffff" fill-rule="nonzero">
+            <g id="icons" transform="translate(113.000000, 71.000000)">
+                <g id="white">
+                    <path d="M294,37.1608419 L294,46.8391581 C294,46.9530207 294.13024,47.0343511 294.22792,46.9855528 L303.91453,42.1382617 C304.02849,42.0731974 304.02849,41.9105366 303.91453,41.8454723 L294.2442,37.0144472 C294.13024,36.9656489 294,37.0469793 294,37.1608419 Z" id="play-icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

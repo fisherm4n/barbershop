@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>like-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1022.000000, -227.000000)" fill-rule="nonzero" stroke="#000000">
+            <g id="icons" transform="translate(113.000000, 71.000000)">
+                <g id="black" transform="translate(0.000000, 110.000000)">
+                    <g id="mini" transform="translate(586.000000, 42.000000)">
+                        <path d="M332.00026,6.28352192 C334.665407,2.9656379 340.5,4.46847922 340.5,9.12810801 C340.5,10.7181821 339.667583,12.325071 337.98772,14.2921455 C337.314919,15.079977 336.517478,15.9178053 335.410815,17.0171454 C334.94707,17.4778227 332.900712,19.4773447 332.352199,20.0216778 L331.999973,20.3712195 L331.647774,20.0216504 C331.097426,19.4754113 329.051263,17.4759022 328.58946,17.0171396 C327.482639,15.9176055 326.685315,15.0799134 326.012539,14.2921562 C324.332489,12.3249748 323.5,10.718148 323.5,9.12810801 C323.5,4.47072941 329.329243,2.95117835 332.00026,6.28352192 Z" id="like-icon"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
