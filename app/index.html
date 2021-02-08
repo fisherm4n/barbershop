@@ -18,9 +18,16 @@
       <div class="header__top">
 
         <a href="#" class="header__logo">
-          <img src="images/logo.svg" alt="logo">
+          <img src="images/logo.svg" alt="logo" class="header__logo-img">
         </a>
         <nav class="menu">
+          <div class="menu__btn-box">
+            <button class="menu__btn">
+              <span></span>
+            </button>
+            <!-- <img src="images/barber.png"class="header__logo-mob"> -->
+          </div>
+          <a href="tel:+7495999999" class="menu__phone">+7 495 999 99 99</a>
           <ul class="menu__list">
             <li class="menu__item"><a href="#" class="menu__link">
                 УСЛУГИ
@@ -34,7 +41,15 @@
             <li class="menu__item"><a href="#" class="menu__link">
                 КОНТАКТЫ
               </a></li>
+              <li class="menu__item-b menu__item-b--call"><a href="#">ЗАПИСАТЬСЯ ПО ТЕЛЕФОНУ</a></li>
+              <li class="menu__item-b menu__item-b--mail"><a href="mailto:barber@mail.ru">barber@mail.ru</a></li>
+              <div class="header__location">
+                <img src="images/header/icons/metro-red.svg" alt="" class="header__metro-logo">
+                Китай-город
+                <a href="#" class="header__map-link">ул. Новая, 14 </a>
+              </div>
           </ul>
+          
         </nav>
         <img src="images/header/icons/razer.svg" alt="razer" class="header__img">
       </div>
@@ -69,46 +84,45 @@
         </div>
       </div>
       <div class="header__bottom">
-        <div class="header__bottom-l">
-          <a class="header__bottom-phone " href="tel:+7495999999">+7 495 999 99 99</a>
-          <div class="header__location-wrapper">
-            <div class="header__location">
-              <img src="images/header/icons/metro-red.svg" alt="" class="header__metro-logo">
-              Китай-город
-              <a href="#" class="header__map-link">ул. Новая, 14 </a>
-            </div>
+        <a class="header__bottom-phone " href="tel:+7495999999">+7 495 999 99 99</a>
+        <div class="header__bottom-inner">
+          <div class="header__bottom-l">
 
+            <div class="header__location-wrapper">
+              <div class="header__location">
+                <img src="images/header/icons/metro-red.svg" alt="" class="header__metro-logo">
+                Китай-город
+                <a href="#" class="header__map-link">ул. Новая, 14 </a>
+              </div>
+
+            </div>
           </div>
-        </div>
-        <a href="#" class="header__bottom-c">
-          <img class="header__bottom-img" src="images/header/icons/arrow.svg" alt="arrow">
-          <p class="header__bottom-text">ЗНАКОМЬТЕСЬ С BARBER
-          </p>
-        </a>
-        <div class="header__bottom-r">
-          <a href="#" class="header__bottom-inst">
-            <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink">
-              Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch
-              <title>instagram-small-white-icon</title>
-              <desc>Created with Sketch.</desc>
-              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="Artboard" transform="translate(-262.000000, -103.000000)" fill="#FFFFFF" fill-rule="nonzero">
-                  <g id="icons" transform="translate(113.000000, 71.000000)">
-                    <g id="white">
-                      <path
-                        d="M158.6,33.7304 C161.1632,33.7304 161.4672,33.74 162.48,33.7864 C165.0816,33.9048 166.2968,35.1392 166.4152,37.7216 C166.4616,38.7336 166.4704,39.0376 166.4704,41.6008 C166.4704,44.1648 166.4608,44.468 166.4152,45.48 C166.296,48.06 165.084,49.2968 162.48,49.4152 C161.4672,49.4616 161.1648,49.4712 158.6,49.4712 C156.0368,49.4712 155.7328,49.4616 154.7208,49.4152 C152.1128,49.296 150.904,48.056 150.7856,45.4792 C150.7392,44.4672 150.7296,44.164 150.7296,41.6 C150.7296,39.0368 150.74,38.7336 150.7856,37.7208 C150.9048,35.1392 152.1168,33.904 154.7208,33.7856 C155.7336,33.74 156.0368,33.7304 158.6,33.7304 Z M158.6,32 C155.9928,32 155.6664,32.0112 154.6424,32.0576 C151.156,32.2176 149.2184,34.152 149.0584,37.6416 C149.0112,38.6664 149,38.9928 149,41.6 C149,44.2072 149.0112,44.5344 149.0576,45.5584 C149.2176,49.0448 151.152,50.9824 154.6416,51.1424 C155.6664,51.1888 155.9928,51.2 158.6,51.2 C161.2072,51.2 161.5344,51.1888 162.5584,51.1424 C166.0416,50.9824 167.984,49.048 168.1416,45.5584 C168.1888,44.5344 168.2,44.2072 168.2,41.6 C168.2,38.9928 168.1888,38.6664 168.1424,37.6424 C167.9856,34.1592 166.0488,32.2184 162.5592,32.0584 C161.5344,32.0112 161.2072,32 158.6,32 Z M158.6,36.6704 C155.8776,36.6704 153.6704,38.8776 153.6704,41.6 C153.6704,44.3224 155.8776,46.5304 158.6,46.5304 C161.3224,46.5304 163.5296,44.3232 163.5296,41.6 C163.5296,38.8776 161.3224,36.6704 158.6,36.6704 Z M158.6,44.8 C156.8328,44.8 155.4,43.368 155.4,41.6 C155.4,39.8328 156.8328,38.4 158.6,38.4 C160.3672,38.4 161.8,39.8328 161.8,41.6 C161.8,43.368 160.3672,44.8 158.6,44.8 Z M163.7248,35.324 C163.088,35.324 162.572,35.84 162.572,36.476 C162.572,37.112 163.088,37.628 163.7248,37.628 C164.3608,37.628 164.876,37.112 164.876,36.476 C164.876,35.84 164.3608,35.324 163.7248,35.324 Z"
-                        id="instagram-small-white-icon"></path>
+          <a href="#" class="header__bottom-c">
+            <img class="header__bottom-img" src="images/header/icons/arrow.svg" alt="arrow">
+            <p class="header__bottom-text">ЗНАКОМЬТЕСЬ С BARBER
+            </p>
+          </a>
+          <div class="header__bottom-r">
+            <a href="#" class="header__bottom-inst">
+              <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g transform="translate(-262.000000, -103.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <g id="icons" transform="translate(113.000000, 71.000000)">
+                      <g id="white">
+                        <path
+                          d="M158.6,33.7304 C161.1632,33.7304 161.4672,33.74 162.48,33.7864 C165.0816,33.9048 166.2968,35.1392 166.4152,37.7216 C166.4616,38.7336 166.4704,39.0376 166.4704,41.6008 C166.4704,44.1648 166.4608,44.468 166.4152,45.48 C166.296,48.06 165.084,49.2968 162.48,49.4152 C161.4672,49.4616 161.1648,49.4712 158.6,49.4712 C156.0368,49.4712 155.7328,49.4616 154.7208,49.4152 C152.1128,49.296 150.904,48.056 150.7856,45.4792 C150.7392,44.4672 150.7296,44.164 150.7296,41.6 C150.7296,39.0368 150.74,38.7336 150.7856,37.7208 C150.9048,35.1392 152.1168,33.904 154.7208,33.7856 C155.7336,33.74 156.0368,33.7304 158.6,33.7304 Z M158.6,32 C155.9928,32 155.6664,32.0112 154.6424,32.0576 C151.156,32.2176 149.2184,34.152 149.0584,37.6416 C149.0112,38.6664 149,38.9928 149,41.6 C149,44.2072 149.0112,44.5344 149.0576,45.5584 C149.2176,49.0448 151.152,50.9824 154.6416,51.1424 C155.6664,51.1888 155.9928,51.2 158.6,51.2 C161.2072,51.2 161.5344,51.1888 162.5584,51.1424 C166.0416,50.9824 167.984,49.048 168.1416,45.5584 C168.1888,44.5344 168.2,44.2072 168.2,41.6 C168.2,38.9928 168.1888,38.6664 168.1424,37.6424 C167.9856,34.1592 166.0488,32.2184 162.5592,32.0584 C161.5344,32.0112 161.2072,32 158.6,32 Z M158.6,36.6704 C155.8776,36.6704 153.6704,38.8776 153.6704,41.6 C153.6704,44.3224 155.8776,46.5304 158.6,46.5304 C161.3224,46.5304 163.5296,44.3232 163.5296,41.6 C163.5296,38.8776 161.3224,36.6704 158.6,36.6704 Z M158.6,44.8 C156.8328,44.8 155.4,43.368 155.4,41.6 C155.4,39.8328 156.8328,38.4 158.6,38.4 C160.3672,38.4 161.8,39.8328 161.8,41.6 C161.8,43.368 160.3672,44.8 158.6,44.8 Z M163.7248,35.324 C163.088,35.324 162.572,35.84 162.572,36.476 C162.572,37.112 163.088,37.628 163.7248,37.628 C164.3608,37.628 164.876,37.112 164.876,36.476 C164.876,35.84 164.3608,35.324 163.7248,35.324 Z">
+                        </path>
+                      </g>
                     </g>
                   </g>
                 </g>
-              </g>
-            </svg>
-            Instagram
-          </a>
-          <span class="header__bottom-eng">
-            We can speak English
-          </span>
+              </svg>
+              Instagram
+            </a>
+            <span class="header__bottom-eng">
+              We can speak English
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -193,20 +207,21 @@
     </div>
     </div>
   </section>
+  
   <div class="models">
     <div class="container">
       <div class="swiper-container">
         <div class="swiper-wrapper models__inner">
-          <div class="model">
+          <div class="model swiper-slide">
             <img src="images/hello/models/1.png" alt="" class="model__img">
           </div>
-          <div class="model">
+          <div class="model swiper-slide">
             <img src="images/hello/models/2.png" alt="" class="model__img">
           </div>
-          <div class="model">
+          <div class="model swiper-slide">
             <img src="images/hello/models/1.png" alt="" class="model__img">
           </div>
-          <div class="model">
+          <div class="model swiper-slide">
             <img src="images/hello/models/2.png" alt="" class="model__img">
           </div>
         </div>
@@ -651,6 +666,7 @@
       </div>
     </div>
   </section>
+<!-- 
   <div class="team-bg">
 
   </div>
@@ -1013,14 +1029,14 @@
         </div>
         <div class="contacts-content">
           <h2 class="contacts-content__title">
-
+            Контакты
           </h2>
           <h3 class="contacts-content__address-title">
             АДРЕС
           </h3>
           <div class="header__location">
             <img src="images/header/icons/metro-red.svg" alt="" class="header__metro-logo">
-            Китай-город
+            Китай-город<br>
             <a href="#" class="contacts-content__location">ул. Новая, 14 </a>
           </div>
           <div class="contacts-content__parking">
@@ -1036,40 +1052,96 @@
             Сообщите администратору номер машины
           </div>
           <div class="contacts-content__contacts">
-            <div class="contacts-content__phone">
-              <span class="contacts-content__phone-title">ТЕЛЕФОН </span> <br>
-              <a href="tel:+7495999999">7495999999</a>
+            <div class="contacts-content__phone-box">
+              <span class="contacts-content__contacts-title">ТЕЛЕФОН </span> <br>
+              <a class="contacts-content__phone" href="tel:+7495999999">+7 (495) 999 99 99</a>
             </div>
-            <div class="contacts-content__mail">
-              <span class="contacts-content__mail-title">E-MAIL</span> <br>
-              <a href="mailto:barber@gmail.com">barber@gmail.com</a>
-            </div>
-            <div class="contacts-content__time">
-              <span class="contacts-content__time-title">
-                ЧАСЫ РАБОТЫ
-              </span>
-              <p class="contacts-content__time-inner">Будни: с 9:00 до 20:00</p>
-              <p class="contacts-content__time-inner">Будни: с 10:00 до 18:00</p>
+            <div class="contacts-content__mail-box">
+              <span class="contacts-content__contacts-title">E-MAIL</span> <br>
+              <a class="contacts-content__mail" href="mailto:barber@gmail.com">barber@gmail.com</a>
             </div>
           </div>
+          <div class="contacts-content__time">
+            <span class="contacts-content__time-title">
+              ЧАСЫ РАБОТЫ
+            </span>
+            <p class="contacts-content__time-inner">Будни: с 9:00 до 20:00</p>
+            <p class="contacts-content__time-inner">Будни: с 10:00 до 18:00</p>
+          </div>
           <div class="contacts__messengers">
-            <a href="https://m.me/" target="_blank" class="contacts__messengers-link">
-              MESSENGER
-            </a>
-            <a href="#" target="_blank" class="contacts__messengers-link">
-              ВКОНТАКТЕ
-            </a>
-            <a href="#" target="_blank" class="contacts__messengers-link">
-              TELEGRAM
-            </a>
-            <a href="#" target="_blank" class="contacts__messengers-link">
-              WHATSAPP
-            </a>
+            <h4 class="contacts__messengers-title">
+              Задавайте нам вопросы
+            </h4>
+            <div class="contacts__link-box">
+              <a href="https://m.me/" target="_blank" class="contacts__link contacts__link--fb">
+                <img class="contacts__messengers-img" src="images/contacts/fb.svg" alt="facebook">
+                MESSENGER
+              </a>
+              <a href="#" target="_blank" class="contacts__link contacts__link--vk">
+                <img class="contacts__messengers-img" src="images/contacts/vk.svg" alt="vk">
+                ВКОНТАКТЕ
+              </a>
+              <a href="#" target="_blank" class="contacts__link contacts__link--tg">
+                <img class="contacts__messengers-img" src="images/contacts/tg.svg" alt="Telegram">
+                TELEGRAM
+              </a>
+              <a href="#" target="_blank" class="contacts__link contacts__link--wa">
+                <img class="contacts__messengers-img" src="images/contacts/wa.svg" alt="whatsapp">
+                WHATSAPP
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="container">
+        <div class="footer__top-inner">
+          <a href="#" class="footer__logo">
+            <img src="images/footer/black-logo.svg" alt="logo">
+          </a>
+          <nav class="menu-f">
+            <ul class="menu__list-f">
+              <li class="menu__item"><a href="#" class="menu__link">
+                  УСЛУГИ
+                </a></li>
+              <li class="menu__item"><a href="#" class="menu__link">
+                  КОМАНДА
+                </a></li>
+              <li class="menu__item"><a href="#" class="menu__link">
+                  ОТЗЫВЫ
+                </a></li>
+              <li class="menu__item"><a href="#" class="menu__link">
+                  КОНТАКТЫ
+                </a></li>
+            </ul>
+          </nav>
+          <img src="images/footer/black-icon.svg" alt="razer" class="footer__img">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer__bottom">
+        <div class="footer__contacts">
+          <a class="footer__contact" href="mailto:barber@gmail.com">barber@gmail.com</a>
+          <a class="footer__contact" href="tel:+7495999999">+7 (495) 999 99 99</a>
+        </div>
+        <span class="footer__bottom-eng">
+          We can speak English
+        </span>
+        <div class="footer__copy">
+          <span>
+            © 2020, Fjord
+          </span>
+          <span>
+            #Barber
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer> --> -->
   <script src="js/main.min.js"></script>
 </body>
 

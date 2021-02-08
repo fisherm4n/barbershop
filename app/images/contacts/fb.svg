@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>messenger-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-449.000000, -103.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="icons" transform="translate(113.000000, 71.000000)">
+                <g id="white">
+                    <path d="M346,32 C340.477,32 336,36.145 336,41.26 C336,44.173 337.454,46.772 339.727,48.47 L339.727,52 L343.132,50.131 C344.04,50.383 345.003,50.519 346,50.519 C351.523,50.519 356,46.373 356,41.259 C356,36.145 351.523,32 346,32 Z M346.994,44.47 L344.447,41.752 L339.478,44.47 L344.944,38.668 L347.553,41.384 L352.46,38.668 L346.994,44.47 Z" id="messenger-icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
