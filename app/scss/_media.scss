@@ -1,6 +1,72 @@
 @import "vars";
+@media (max-width:1130px) {
+  .contacts {
+    &__inner {
+      flex-direction: column;
+    }
+
+    .map {
+      width: 100%;
+
+      &__inner {
+        width: 100%;
+      }
+    }
+
+  }
+   .reviews {
+     &__inner {
+       flex-wrap: wrap;
+       justify-content: space-around;
+     }
+
+     .card {
+       margin-bottom: 16px;
+     }
+   }
+   .gift {
+     &__inner {
+       justify-content: flex-start;
+     }
+
+     &__item {
+       padding: 20px;
+     }
+   }
+}
+@media (max-width:1080px) {
+ 
+  .price__column{
+    flex: 0 0 60%;
+    max-width: 60%;
+    
+  }
+  .price__content{
+    flex: 0 0 40%;
+    max-width: 40%;
+    order: -1;
+  } 
+  .team{
+    &__column{
+      margin: 0px;
+      flex: 0 0 100%;
+      &:first-child{
+        margin-bottom: 32px;
+      }
+    }
+    .team__column+.team__column {
+      margin-left: 0px;
+    }
+    &__more{
+      display: none;
+    }
+  }
+}
 
 @media (max-width:950px) {
+  .team-bg{
+    display: none;
+  }
   .header {
     &__bottom-phone {
       display: flex;
@@ -40,7 +106,8 @@
 @media (max-width:800px) {
   .header {
     margin-bottom: 40px;
-    &__inner{
+
+    &__inner {
       padding: 0;
       padding-bottom: 32px;
     }
@@ -64,6 +131,7 @@
     &__img {
       display: none;
     }
+
     .menu {
       margin-right: auto;
       display: flex;
@@ -71,6 +139,7 @@
       justify-content: space-between;
       background-color: #000;
       padding: 20px;
+
       .menu__list.menu__list--active {
         width: 100%;
         background-color: #000;
@@ -89,20 +158,22 @@
         }
       }
 
-      .header__location{
+      .header__location {
         display: block;
       }
-      &__item{
+
+      &__item {
         margin: 0;
       }
+
       &__btn-box {
         display: flex;
       }
-  
+
       &__item-b {
         display: block;
         width: 100%;
-  
+
         &--call {
           font-size: 12px;
           font-weight: 700;
@@ -115,38 +186,42 @@
           display: flex;
           justify-content: center;
           align-items: center;
-  
+
           a {
             color: #fff;
           }
         }
-        &--mail{
+
+        &--mail {
           padding: 15px 0px;
         }
       }
-  
+
       &__phone {
         display: block;
         font-size: 18px;
       }
-      .header__location{
+
+      .header__location {
         color: #fff;
       }
-      .header__map-link{
-        color:#c7a081;
+
+      .header__map-link {
+        color: #c7a081;
       }
+
       &__list {
         transform: translateY(-300%);
         position: absolute;
         padding: 0 32px;
         left: 0px;
         flex-direction: column;
-  
+
         &.menu__list--active {
           transform: translateY(0%);
         }
       }
-  
+
       &__btn {
         width: 30px;
         height: 22px;
@@ -157,13 +232,13 @@
         align-items: center;
         position: relative;
         padding: 0;
-  
+
         span {
           width: 100%;
           height: 3px;
           background-color: #fff;
         }
-  
+
         &::after,
         &::before {
           content: "";
@@ -172,29 +247,92 @@
           height: 3px;
           background-color: #fff;
         }
-  
+
         &::before {
           top: 0px;
         }
-  
+
         &::after {
           bottom: 0px;
         }
       }
     }
   }
-  .hello{
+
+  .hello {
     margin-top: 0px;
-    &__top{
+
+    &__top {
       flex-direction: column;
       align-items: center;
     }
+
     &__item,
-    &__img-box{
+    &__img-box {
       width: 100%;
     }
-    &__img{
+
+    &__img {
       margin: 10px auto;
     }
   }
+  .more {
+    &__inner {
+      display: block;
+    }
+  
+    &__img-box {
+      margin-right: 0px;
+      margin-bottom: 24px;
+    }
+  
+    &__content {
+      width: auto;
+      height: auto;
+    }
+  }
+  .price{
+    &__box{
+      flex-direction: column;
+    }
+    &__content{
+      max-width: 60%;
+    }
+    &__column{
+      max-width: 100%;
+    }
+     &__column--first {
+       order: -1;
+       margin-bottom: 15px;
+     }
+  }
+  .footer{
+    &__bottom{
+      display: block;
+      text-align: center;
+    }
+  }
 }
+@media (max-width:550px){
+  .price {
+    &__content {
+      max-width: 100%;
+    }
+  }
+  .contacts-content{
+    &__contacts,
+    &__parking{
+      flex-wrap: wrap;
+    }
+  }
+  .footer{
+    &__top-inner{
+      justify-content: center;
+    }
+    &__logo,
+    &__img{
+      display: none;
+    }
+  }
+}
+
