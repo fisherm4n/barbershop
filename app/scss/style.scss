@@ -71,7 +71,11 @@
     display: flex;
     align-self: flex-start;
   }
-
+  &__logo-img{
+    object-fit: cover;
+    width: 111px;
+    height: 80px;
+  }
   &__logo-mob {
     width: 74px;
     height: 50px;
@@ -133,7 +137,6 @@
   }
 
   &__title {
-    padding-top: 16px;
     padding-bottom: 16px;
     color: #fff;
     @extend %Gilroy-700;
@@ -145,6 +148,9 @@
 
   &__mid-logo {
     margin: 0 auto;
+    width: 179px;
+    height: 215px;
+    object-fit: cover;
   }
 
   &__mid-r {
