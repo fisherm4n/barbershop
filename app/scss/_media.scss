@@ -1,8 +1,21 @@
 @import "vars";
+
 @media (max-width:1130px) {
   .contacts {
     &__inner {
       flex-direction: column;
+    }
+
+    iframe,
+    .contacts-content {
+      width: 100%;
+
+    }
+
+    .contacts-content {
+      &__item {
+        max-width: 302px;
+      }
     }
 
     .map {
@@ -14,59 +27,103 @@
     }
 
   }
-   .reviews {
-     &__inner {
-       flex-wrap: wrap;
-       justify-content: space-around;
-     }
 
-     .card {
-       margin-bottom: 16px;
-     }
-   }
-   .gift {
-     &__inner {
-       justify-content: flex-start;
-     }
+  .reviews {
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
 
-     &__item {
-       padding: 20px;
-     }
-   }
+    .card {
+      margin-bottom: 16px;
+    }
+  }
+
+  .gift {
+    &__inner {
+      justify-content: flex-start;
+    }
+
+    &__item {
+      padding: 20px;
+    }
+  }
 }
+
 @media (max-width:1080px) {
- 
-  .price__column{
+
+  .price__column {
     flex: 0 0 60%;
     max-width: 60%;
-    
+
   }
-  .price__content{
+
+  .price__content {
     flex: 0 0 40%;
     max-width: 40%;
     order: -1;
-  } 
-  .team{
-    &__column{
+  }
+
+  .team {
+    &__column {
       margin: 0px;
       flex: 0 0 100%;
-      &:first-child{
+
+      &:first-child {
         margin-bottom: 32px;
       }
     }
+
     .team__column+.team__column {
       margin-left: 0px;
     }
-    &__more{
+
+    &__more {
       display: none;
     }
   }
 }
 
 @media (max-width:950px) {
-  .team-bg{
-    display: none;
+  .team-bg {
+    max-height: 710px;
+    background-image: url(../images/team/1-bg.png);
+    background-size: cover;
+    background-position: 50% 30%;
+    &__wrapper{
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .4);
+    }
+    &__inner{
+      max-height: 710px;
+      height: 100vh;
+      min-height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: #fff;
+      line-height: 1.3;
+    }
+    &__top,
+    .team__card {
+      display: block;
+      background-color: transparent;
+      box-shadow: none;
+      &-content {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    .team__title,
+    .team__text {
+      text-align: start;
+      margin: 0px;
+    }
   }
+
   .header {
     &__bottom-phone {
       display: flex;
@@ -101,12 +158,25 @@
       left: 50%;
     }
   }
+
+  .team {
+
+    .team__card:first-child,
+    .team__title,
+    .team__text {
+      display: none;
+    }
+  }
 }
 
 @media (max-width:800px) {
   .header {
     margin-bottom: 40px;
-
+    max-height: 70vh;
+    &__mid-c,
+    &__mid{
+      padding: 0px 10px;
+    }
     &__inner {
       padding: 0;
       padding-bottom: 32px;
@@ -276,63 +346,97 @@
       margin: 10px auto;
     }
   }
+
   .more {
     &__inner {
       display: block;
     }
-  
+
     &__img-box {
       margin-right: 0px;
       margin-bottom: 24px;
     }
-  
+
     &__content {
       width: auto;
       height: auto;
     }
   }
-  .price{
-    &__box{
+
+  .price {
+    &__box {
       flex-direction: column;
     }
-    &__content{
+
+    &__content {
       max-width: 60%;
     }
-    &__column{
+
+    &__column {
       max-width: 100%;
     }
-     &__column--first {
-       order: -1;
-       margin-bottom: 15px;
-     }
+
+    &__column--first {
+      order: -1;
+      margin-bottom: 15px;
+    }
   }
-  .footer{
-    &__bottom{
+
+  .footer {
+    &__bottom {
       display: block;
       text-align: center;
     }
   }
 }
-@media (max-width:550px){
+
+@media (max-width:550px) {
   .price {
     &__content {
       max-width: 100%;
     }
   }
-  .contacts-content{
+  .team{
+        .team__img{
+              object-fit: cover;
+              max-width: 183px;
+              height: 240px;
+        }
+  }
+  .contacts-content {
+
     &__contacts,
-    &__parking{
+    &__parking {
       flex-wrap: wrap;
     }
   }
-  .footer{
-    &__top-inner{
+  .reviews {
+    padding: 26px 0;
+  }
+  .footer {
+    &__top-inner {
       justify-content: center;
     }
+
     &__logo,
-    &__img{
+    &__img {
       display: none;
     }
   }
 }
-
+@media (max-width:450px){
+    .team {
+      .team__card{
+            flex-direction: column;
+            max-width: 262px;
+                margin: 0 auto 32px;
+      }
+      .team__img {
+        max-width: 100%;
+        width: 100%;
+      }
+      .team__column:first-child {
+        margin-bottom: 32px;
+      }
+    }
+}

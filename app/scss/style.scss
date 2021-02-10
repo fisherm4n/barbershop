@@ -26,17 +26,18 @@
   .video {
     padding-bottom: 56.25%;
     height: 100vh;
+
     &__media {
-         position: absolute;
-         top: 50%;
-         left: 50%;
-         min-width: 100%;
-         min-height: 100vh;
-         width: auto; 
-         height: auto; 
-         transform: translateX(-50%) translateY(-50%);
-          background-size: cover; 
-         transition: 1s opacity;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100vh;
+      width: auto;
+      height: auto;
+      transform: translateX(-50%) translateY(-50%);
+      background-size: cover;
+      transition: 1s opacity;
     }
   }
 
@@ -70,12 +71,13 @@
     display: flex;
     align-self: flex-start;
   }
-  &__logo-mob{
+
+  &__logo-mob {
     width: 74px;
     height: 50px;
     object-fit: cover;
   }
-  
+
   &__mid-l {
     display: flex;
     flex-direction: column;
@@ -162,12 +164,13 @@
   }
 
   &__bottom {
-    &-inner{
+    &-inner {
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
 
     }
+
     &-l {
       color: #fff;
       width: 40%;
@@ -205,7 +208,7 @@
   &__bottom-img {
     margin-bottom: 10px;
   }
-  
+
   &__bottom-phone::before,
   &__location::before {
     position: absolute;
@@ -247,17 +250,19 @@
 }
 
 .menu {
-      z-index: 1000;
+  z-index: 1000;
   position: relative;
+
   &__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
-  .header__location{
+
+  .header__location {
     display: none;
   }
+
   &__item {
     margin-left: 32px;
   }
@@ -269,18 +274,72 @@
     font-size: 12px;
     letter-spacing: 1px;
   }
+
   &__btn,
   &__item-b,
   &__phone,
-   {
+    {
     display: none;
-      color: #c7a081;
+    color: #c7a081;
 
-    a{
+    a {
 
       color: #c7a081;
     }
 
+  }
+}
+.form-success{
+  padding: 40px 16px 38px;
+  &__inner{
+    background-color: #fff;
+    max-width: 343px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  &__title{
+    padding-top: 16px;
+    color: #000;
+    font-size: 26px;
+    @extend %Gilroy-700;
+    line-height: 39px;
+    padding-bottom: 5px;
+  }
+  &__subtitle{
+        font-size: 16px;
+        line-height: 26px;
+        font-family: "Source Sans Pro",
+        sans-serif;
+        text-align: center;
+        padding-bottom: 16px;
+  }
+  &__btn{
+    border-radius: 4px;
+    outline: transparent;
+    border: 2px solid #c7a081;
+    background-color: #c7a081;
+    width: 100%;
+    color: #fff;
+    font-size: 12px;
+    @extend %Gilroy-700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-top: 17px;
+    padding-bottom: 16px;
+  }
+  &__lk{
+        font-family: "Source Sans Pro",
+        sans-serif;
+        font-size: 16px;
+        line-height: 26px;
+        padding-top: 8px;
+        a{
+              color: #357fd6;
+        }
   }
 }
 .fixed {
@@ -292,37 +351,42 @@
   top: 0px;
   z-index: 1000;
   padding: 20px;
-  .menu__link{
+
+  .menu__link {
     transition: all 0.3s;
     border-bottom: 1px solid transparent;
     padding-bottom: 2px;
-  &:hover{
-    border-bottom: 1px solid #c7a081;
-  }
+
+    &:hover {
+      border-bottom: 1px solid #c7a081;
+    }
   }
 }
-.active{
+
+.active {
   display: block;
-      border-radius: 4px;
-      background-color: #c7a081;
-      color: #fff;
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      height: 36px;
-      padding-top: 11px;
-      padding-bottom: 12px;
-      padding-left: 24px;
-      padding-right: 24px;
-      a{
-        color: #fff;
-      }
+  border-radius: 4px;
+  background-color: #c7a081;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  height: 36px;
+  padding-top: 11px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  a {
+    color: #fff;
+  }
 }
+
 .hello {
   margin-bottom: 16px;
   position: relative;
   margin-top: -60px;
-  z-index:2 ;
+  z-index: 2;
 
   &__top {
     display: flex;
@@ -347,6 +411,7 @@
       @extend %Gilroy-700;
       font-size: 28px;
 
+      
       &::before {
         position: absolute;
         content: "";
@@ -367,6 +432,9 @@
       }
 
 
+    }
+    &-text {
+      margin-bottom: 5px;
     }
 
     &-btn {
@@ -425,20 +493,21 @@
   //   display: flex;
 
   // }
-  }
-  .model {
+}
 
-    &__img {
-      object-fit: cover;
-      height: 371px;
-      width: 273px;
-      margin: 0 auto;
-    }
-  }
+.model {
 
-  // .model+.model {
-  //   margin-left: 15px;
-  // }
+  &__img {
+    object-fit: cover;
+    height: 371px;
+    width: 273px;
+    margin: 0 auto;
+  }
+}
+
+// .model+.model {
+//   margin-left: 15px;
+// }
 
 .more {
   margin-bottom: 60px;
@@ -528,14 +597,15 @@
     margin-left: 30px;
     padding: 10px 0;
     padding-right: 30px;
- border: 1px solid #000;
- background-color: #000;
- text-align: center;
- border-radius: 4px;
- font-size: 10px;
- letter-spacing: 1px;
- @extend %Gilroy-700;
-  color: #fff;
+    border: 1px solid #000;
+    background-color: #000;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    @extend %Gilroy-700;
+    color: #fff;
+
     &-img {
       position: absolute;
       display: block;
@@ -748,6 +818,14 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  &__top {
+    display: none;
+  }
+
+  .team__card {
+    display: none;
+  }
 }
 
 .team {
@@ -782,6 +860,7 @@
     background-color: #222;
     border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, .04);
+
     &+& {
       margin-top: 32px;
     }
@@ -982,6 +1061,8 @@
 }
 
 .gift {
+  margin-bottom: 64px;
+
   &__inner {
     display: flex;
     flex-wrap: wrap;
@@ -1257,13 +1338,15 @@
     }
 
     .menu-f {
-      &__list{
+      &__list {
         display: flex;
         flex-wrap: wrap;
       }
-      .menu__item{
+
+      .menu__item {
         margin-left: 15px;
       }
+
       .menu__link {
         color: #454545;
       }

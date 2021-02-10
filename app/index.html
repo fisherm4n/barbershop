@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header id="header" class="header">
 
     <div class="video">
       <video class="video__media" src="video/video.mp4" autoplay muted loop></video>
@@ -29,16 +29,16 @@
           </div>
           <a href="tel:+7495999999" class="menu__phone">+7 495 999 99 99</a>
           <ul class="menu__list">
-            <li class="menu__item"><a href="#" class="menu__link">
+            <li class="menu__item"><a href="#price" class="menu__link">
                 УСЛУГИ
               </a></li>
-            <li class="menu__item"><a href="#" class="menu__link">
+            <li class="menu__item"><a href="#team" class="menu__link">
                 КОМАНДА
               </a></li>
-            <li class="menu__item"><a href="#" class="menu__link">
+            <li class="menu__item"><a href="#reviews" class="menu__link">
                 ОТЗЫВЫ
               </a></li>
-            <li class="menu__item"><a href="#" class="menu__link">
+            <li class="menu__item"><a href="#contacts" class="menu__link">
                 КОНТАКТЫ
               </a></li>
             <li class="menu__item-b menu__item-b--call"><a href="#">ЗАПИСАТЬСЯ ПО ТЕЛЕФОНУ</a></li>
@@ -68,7 +68,18 @@
             <span>+7</span>
             <input id="phone" class="header__form-input" type="tel" name="Телефон" placeholder="(___) ___-__-__"
               maxlength="15" aria-invalid="false">
-            <button class="button">ЗАПИСАТЬСЯ</button>
+            <button type="submit" data-fancybox data-src="#modal-header" class="header__btn">ЗАПИСАТЬСЯ</button>
+            <div id="modal-header" class="form-success" style="display: none;">
+              <div class="form-success__inner">
+                <img class="form-success__img" src="images/header/icons/ok-icon.svg" alt="ok">
+                <h4 class="form-success__title">Спасибо за запись!</h4>
+                <p class="form-success__subtitle">В ближайшее время с вами свяжется менеджер и уточнит детали.</p>
+                <button data-fancybox-close class="form-success__btn" title="close">БУДУ ЖДАТЬ</button>
+                <p class="form-success__lk">Или полистайте <a href="https://www.instagram.com/">наш
+                    instagram</a>
+                </p>
+              </div>
+            </div>
           </form>
         </div>
         <div class="header__mid-r">
@@ -213,16 +224,16 @@
       <div class="swiper-container">
         <div class="swiper-wrapper models__inner">
           <div class="model swiper-slide">
-            <img src="images/hello/models/1.png" alt="" class="model__img">
+            <img src="images/hello/models/3.jpg" alt="стрижка" class="model__img">
           </div>
           <div class="model swiper-slide">
-            <img src="images/hello/models/2.png" alt="" class="model__img">
+            <img src="images/hello/models/4.jpg" alt="стрижка" class="model__img">
           </div>
           <div class="model swiper-slide">
-            <img src="images/hello/models/1.png" alt="" class="model__img">
+            <img src="images/hello/models/1.png" alt="стрижка" class="model__img">
           </div>
           <div class="model swiper-slide">
-            <img src="images/hello/models/2.png" alt="" class="model__img">
+            <img src="images/hello/models/2.png" alt="стрижка" class="model__img">
           </div>
         </div>
       </div>
@@ -243,7 +254,7 @@
 
         </div>
         <div class="more__content">
-          <a href="#" class="more__signup">ЗАПИСАТЬСЯ НА СТРИЖКУ</a>
+          <a href="#header" class="more__signup">ЗАПИСАТЬСЯ НА СТРИЖКУ</a>
           <div class="more__content-inner">
             <img src="images/hello/cream.png" alt="" class="more__content-img">
             <p class="more__content-text">
@@ -264,7 +275,7 @@
       </div>
     </div>
   </div>
-  <section class="price">
+  <section id="price" class="price">
     <div class="container">
       <div class="price__inner">
         <h2 class="price__title">
@@ -666,8 +677,43 @@
       </div>
     </div>
   </section>
-  <div class="team-bg">
+  <div id="team" class="team-bg">
+    <div class="team-bg__wrapper">
+      <div class="container">
+        <div class="team-bg__inner">
+          <div class="team-bg__top">
+            <h2 class="team__title">
+              Команда
+            </h2>
+            <p class="team__text">
+              Мы собрали команду из разносторонних, интересных людей, работающих в разных стилях, но объединенных общей
+              целью. Работы наших мастеров публикуют мировые косметические бренды (Mr Natty, Reuzel, Dapper Dan) как
+              образцы
+              стиля и уровня мастерства.
+            </p>
+          </div>
+          <div class="team__card">
+            <div class="team__card-content team__card-content--quote">
+              <span class="team__card-position">
+                Основатель
+              </span>
+              <p class="team__card-title">
+                Марк Тарасов
+              </p>
+              <a class="team__card-mail" href="mailto:barber@gmail.com">barber@gmail.com</a>
+              <p class="team__card-text">
+                Мы искренне любим свое дело и хотим дарить крутые стрижки и эмоции. У нас не стоит задачи превратиться
+                в
+                еще один конвейер по продаже франшиз.
 
+                Мне всегда важно поддерживать связь с нашими клиентами, поэтому если у вас возникли вопросы или
+                замечания к работе команды, смело обращайтесь с ними ко мне!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <section class="team">
     <div class="container">
@@ -689,7 +735,7 @@
                   Основатель
                 </span>
                 <p class="team__card-title">
-                  Иван Якубов
+                  Марк Тарасов
                 </p>
                 <a class="team__card-mail" href="mailto:barber@gmail.com">barber@gmail.com</a>
                 <p class="team__card-text">
@@ -850,9 +896,9 @@
     </div>
   </section>
 
-  <section class="reviews">
+  <section id="reviews" class="reviews">
     <div class="container">
-      <a href="#" class="reviews__link"><img src="images/reviews/insta.svg" alt="">Fjordcut</a>
+      <a href="#" class="reviews__link"><img src="images/reviews/insta.svg" alt="">Barber</a>
       <h2 class="reviews__title">
         Что о нас говорят
       </h2>
@@ -886,25 +932,24 @@
           <div class="card__top">
             <img src="images/reviews/thumb-1.png" alt="avatar" class="card__top-img">
             <div class="card__top-inner">
-              <span class="card__top-nick">thomas_shelby</span>
+              <span class="card__top-nick">mister_been</span>
               <span class="card__top-loca">Barber - мужские стрижки</span>
             </div>
           </div>
-          <img src="images/reviews/1.png" alt="instagram" class="card__img">
+          <img src="images/reviews/2.jpg" alt="instagram" class="card__img">
           <div class="card__content">
             <span class="card__content-likes">Нравится: 4 206</span>
 
             <p class="card__content-text">
               <span class="card__content-nick">
-                thomas_shelby
+                mister_been
               </span>
-              После отпуска тяжело входить в рабочую колею, но стоит начать хотя бы с себя 🤩. Поэтому огромное спасибо
-              Жене
-              из
+              Друзья, у меня вечная проблема найти подходящий для меня барбершоп, где и удобно добраться и мастера были
+              хорошие! И вот наконец открылся
               <a href="https://www.instagram.com" target="_blank" class="card__content-link">
                 @Barber
               </a>
-              , что привёл мою голову в порядок 💇🏽‍♂️
+              Вообщем ребята, всем настоятельно рекомендую заскочить в это стильное место 🔥
             </p>
           </div>
         </div>
@@ -912,24 +957,22 @@
           <div class="card__top">
             <img src="images/reviews/thumb-1.png" alt="avatar" class="card__top-img">
             <div class="card__top-inner">
-              <span class="card__top-nick">thomas_shelby</span>
+              <span class="card__top-nick">sashafromrussia</span>
               <span class="card__top-loca">Barber - мужские стрижки</span>
             </div>
           </div>
-          <img src="images/reviews/1.png" alt="instagram" class="card__img">
+          <img src="images/reviews/3.jpg" alt="instagram" class="card__img">
           <div class="card__content">
             <span class="card__content-likes">Нравится: 4 206</span>
             <p class="card__content-text">
               <span class="card__content-nick">
-                thomas_shelby
+                sashafromrussia
               </span>
-              После отпуска тяжело входить в рабочую колею, но стоит начать хотя бы с себя 🤩. Поэтому огромное спасибо
-              Жене
-              из
+              Сегодня было ооочень много дел с самого утра 💼 А что бы день был удачным забежал первым делом в
               <a href="https://www.instagram.com" target="_blank" class="card__content-link">
                 @Barber
               </a>
-              , что привёл мою голову в порядок 💇🏽‍♂️
+              💈 привёл свою голову перед предстоящей поездкой 🛩 Быстро и качественно.
             </p>
           </div>
         </div>
@@ -937,24 +980,22 @@
           <div class="card__top">
             <img src="images/reviews/thumb-1.png" alt="avatar" class="card__top-img">
             <div class="card__top-inner">
-              <span class="card__top-nick">thomas_shelby</span>
+              <span class="card__top-nick">victor_95</span>
               <span class="card__top-loca">Barber - мужские стрижки</span>
             </div>
           </div>
-          <img src="images/reviews/1.png" alt="instagram" class="card__img">
+          <img src="images/reviews/4.jpg" alt="instagram" class="card__img">
           <div class="card__content">
             <span class="card__content-likes">Нравится: 4 206</span>
             <p class="card__content-text">
               <span class="card__content-nick">
-                thomas_shelby
+                victor_95
               </span>
-              После отпуска тяжело входить в рабочую колею, но стоит начать хотя бы с себя 🤩. Поэтому огромное спасибо
-              Жене
-              из
+              В таком стильном месте, как
               <a href="https://www.instagram.com" target="_blank" class="card__content-link">
                 @Barber
               </a>
-              , что привёл мою голову в порядок 💇🏽‍♂️
+              грех не сфоткаться 😎 Рекомендую затестить new cut у Жени в кресле 💇‍♂️
             </p>
           </div>
         </div>
@@ -1021,13 +1062,13 @@
     </div>
   </section>
 
-  <section class="contacts">
+  <section id="contacts" class="contacts">
     <div class="container">
       <div class="contacts__inner">
         <div class="map">
-          <script type="text/javascript" charset="utf-8" async
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1076f0079006dca6c5bf1321f616ee02f42e64a25edac304d3a488fb15f7537c&amp;width=722&amp;height=701&amp;lang=ru_RU&amp;scroll=true">
-          </script>
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A4a02deec8f6c0eb2ea3844ef26063670d048b44e1a478af96e7377ce571fa513&amp;source=constructor"
+            width="722" height="701" frameborder="0"></iframe>
         </div>
         <div class="contacts-content">
           <h2 class="contacts-content__title">
@@ -1041,7 +1082,7 @@
             Китай-город<br>
             <a href="#" class="contacts-content__location">ул. Новая, 14 </a>
           </div>
-          <div class="contacts-content__parking">
+          <div class="contacts-content__parking contacts-content__item">
             <a href="#">
               ПАРКОВКИ РЯДОМ
             </a>
@@ -1053,7 +1094,7 @@
             <span>Бесплатная парковка во дворах</span> <br>
             Сообщите администратору номер машины
           </div>
-          <div class="contacts-content__contacts">
+          <div class="contacts-content__contacts contacts-content__item">
             <div class="contacts-content__phone-box">
               <span class="contacts-content__contacts-title">ТЕЛЕФОН </span> <br>
               <a class="contacts-content__phone" href="tel:+7495999999">+7 (495) 999 99 99</a>
@@ -1107,16 +1148,16 @@
           </a>
           <nav class="menu-f">
             <ul class="menu-f__list">
-              <li class="menu__item"><a href="#" class="menu__link">
+              <li class="menu__item"><a href="#price" class="menu__link">
                   УСЛУГИ
                 </a></li>
-              <li class="menu__item"><a href="#" class="menu__link">
+              <li class="menu__item"><a href="#team" class="menu__link">
                   КОМАНДА
                 </a></li>
-              <li class="menu__item"><a href="#" class="menu__link">
+              <li class="menu__item"><a href="#reviews" class="menu__link">
                   ОТЗЫВЫ
                 </a></li>
-              <li class="menu__item"><a href="#" class="menu__link">
+              <li class="menu__item"><a href="#contacts" class="menu__link">
                   КОНТАКТЫ
                 </a></li>
             </ul>
@@ -1144,7 +1185,7 @@
         </div>
       </div>
     </div>
-  </footer> 
+  </footer>
   <script src="js/main.min.js"></script>
 </body>
 

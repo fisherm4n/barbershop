@@ -5,19 +5,8 @@ body {
   color: #454545;
 }
 
-.button {
-  font-size: 12px;
-  font-weight: 700;
-  width: 136px;
-  height: 102%;
-  background-color: #357fd6;
-  color: #fff;
-  transition: all .3s;
-  border-radius: 0 4px 4px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
+.header__btn {
+ @extend %btn;
 }
 .container{
   margin: 0 auto;
